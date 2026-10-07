@@ -22,4 +22,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Compile Python modules
-        run: python -m compileall -q app.py database.py predict.py prepare_data.py train_model.py
+        run: python -m compileall -q app.py database.py predict.py prepare_data.py train_model.py tests
+
+      - name: Run automated tests
+        run: pytest -q
