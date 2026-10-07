@@ -378,8 +378,8 @@ The dataset is used under its stated license/terms. Refer to the UCI repository 
 - [x] PostgreSQL persistence
 - [x] SHAP explainability
 - [x] Docker Compose environment
-- [x] GitHub Actions CI foundation
-- [ ] Automated unit and integration tests
+- [x] GitHub Actions CI with automated tests
+- [x] Automated unit and integration tests
 - [ ] API layer with FastAPI
 - [ ] Structured application logging
 - [ ] Model/version metadata tracking
