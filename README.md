@@ -344,8 +344,11 @@ Current checks:
 
 1. Install project dependencies
 2. Compile the Python modules to catch syntax/import compilation errors
+3. Run the pytest suite with `pytest -q`
 
-The CI foundation can be expanded with unit tests, linting, type checking, security scanning, and model validation as the project evolves.
+The tests cover the expected feature/target schema, prediction behavior using stub models, and persistence using an in-memory SQLite database. They do **not** currently verify behavior against a live PostgreSQL service or provide clinical validation of the model.
+
+The CI foundation can be expanded with linting, type checking, security scanning, and model validation as the project evolves.
 
 ## 🌐 Deployment
 
@@ -379,7 +382,7 @@ The dataset is used under its stated license/terms. Refer to the UCI repository 
 - [x] SHAP explainability
 - [x] Docker Compose environment
 - [x] GitHub Actions CI with automated tests
-- [x] Automated unit and integration tests
+- [x] Automated tests for data schema, prediction behavior, and persistence
 - [ ] API layer with FastAPI
 - [ ] Structured application logging
 - [ ] Model/version metadata tracking
