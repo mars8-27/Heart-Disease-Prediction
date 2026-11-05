@@ -344,6 +344,7 @@ Current checks:
 
 1. Install project dependencies
 2. Compile the Python modules to catch syntax/import compilation errors
+3. Run the pytest suite with `pytest -q`
 
 The tests cover the expected feature/target schema, prediction behavior using stub models, and persistence using an in-memory SQLite database. They do **not** currently verify behavior against a live PostgreSQL service or provide clinical validation of the model.
 
